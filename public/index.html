@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parkinson's Disease Prediction Model</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="eyebrow">About the disease</div>
+      <h2 class="sidebar-title">Parkinson's disease</h2>
+      <p>
+        A progressive neurological disorder that affects movement. Common motor
+        signs include tremor, stiffness, and slowed motion.
+      </p>
+      <p>
+        Handwriting and spiral drawing can show irregular velocity and jerk,
+        the kind of kinematic signal this demo explores.
+      </p>
+      <div class="callout">
+        Passion research project for learning. Not clinical advice or a diagnostic tool.
+      </div>
+      <div class="meta">
+        Dataset: UCI spiral drawings<br />
+        Model: XGBoost + kinematics
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="eyebrow">Informational research demo</div>
+      <h1>Parkinson's Disease Prediction Model</h1>
+      <p class="lede">
+        Trace the faint spiral in one continuous stroke, then lift your pointer.
+        The model compares your drawing's motion patterns to labeled tablet recordings.
+      </p>
+
+      <div class="demo">
+        <div class="canvas-panel">
+          <canvas id="spiral-canvas" width="480" height="480" aria-label="Spiral drawing canvas"></canvas>
+          <div class="controls">
+            <button id="clear-btn" type="button">Clear</button>
+            <span id="status-text">Draw a spiral above</span>
+          </div>
+        </div>
+
+        <div class="result-panel" id="result-panel" aria-live="polite">
+          <div class="eyebrow">Result</div>
+          <div class="result-idle" id="result-idle">
+            Draw a continuous spiral to see a score.
+          </div>
+          <div class="result-body hidden" id="result-body">
+            <div class="result-label">Estimated probability</div>
+            <div class="result-pct" id="result-pct">—</div>
+            <p class="result-summary" id="result-summary"></p>
+            <div class="bar-track" aria-hidden="true">
+              <div class="bar-fill" id="result-bar"></div>
+            </div>
+            <div class="bar-labels">
+              <span>Control</span>
+              <span>Parkinson's</span>
+            </div>
+            <div class="result-note">
+              Browser drawings differ from the tablet study. Treat this as illustrative only.
+            </div>
+          </div>
+          <div class="result-error hidden" id="result-error"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

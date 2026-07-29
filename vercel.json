@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "public",
+  "functions": {
+    "api/predict.py": {
+      "maxDuration": 30,
+      "excludeFiles": "{tests/**,.superpowers/**,docs/**,**/*.ipynb,confusion_matrix.png,streamlit_app.py,Parkinsons.py}"
+    }
+  }
+}
