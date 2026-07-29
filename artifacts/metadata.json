@@ -1,0 +1,8 @@
+{
+  "tuned_threshold": 0.9226996898651123,
+  "target_recall": 0.9,
+  "min_kinematic_rows": 10,
+  "cv_accuracy_mean": 0.9375,
+  "cv_recall_parkinson_mean": 0.9400000000000001,
+  "cv_roc_auc_mean": 0.9800000000000001
+}
