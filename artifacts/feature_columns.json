@@ -1,1 +1,15 @@
-["Velocity_mean", "Velocity_std", "Velocity_max", "Acceleration_mean", "Acceleration_std", "Acceleration_max", "Jerk_mean", "Jerk_std", "Jerk_max", "Pressure_mean", "Pressure_std", "Pressure_RollStd_mean", "Pressure_RollStd_max"]
+[
+  "Velocity_mean",
+  "Velocity_std",
+  "Velocity_max",
+  "Acceleration_mean",
+  "Acceleration_std",
+  "Acceleration_max",
+  "Jerk_mean",
+  "Jerk_std",
+  "Jerk_max",
+  "Pressure_mean",
+  "Pressure_std",
+  "Pressure_RollStd_mean",
+  "Pressure_RollStd_max"
+]
